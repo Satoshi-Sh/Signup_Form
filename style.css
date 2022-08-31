@@ -1,0 +1,13 @@
+* {
+    margin:0;
+    background-color: rgb(218, 208, 208);
+}
+
+@font-face {
+    font-family: 'logo-font';
+    src: URL('fonts/Norse-Bold.otf') format('truetype');
+  }
+
+  h1{
+    font-family:logo-font;
+  }

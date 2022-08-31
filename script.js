@@ -23,4 +23,18 @@ pass.addEventListener('change', (e) =>{
     })
     
 
+const logo = document.querySelector('.logo-image')
 
+document.addEventListener('DOMContentLoaded',change)
+
+
+window.onresize= change;
+
+function change() {
+    if(window.innerWidth<750){
+        logo.style.display='none'
+    }
+    else{
+        logo.style.display='inline';
+    }
+}

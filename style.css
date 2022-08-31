@@ -15,39 +15,38 @@ body {
 }
 
   .image-section {
-    flex:0 0.5 35vw;
+    flex:0 0 35%;
     background-image: url('images/binit-sharma-BiZb01CW0RE-unsplash.jpg');
-    height:120vh;  
-    width:clamp(350px,35vw,1000px);
+    height:150vh;  
     background-repeat:no-repeat;
     background-size:cover;   
     position:relative;
   }
 
   .logo-section{
-    font-size:14rem;
     font-family:'logo-font',Arial, Helvetica, sans-serif;
     position:absolute;
     background-color:rgba(31, 28, 28, 0.6);
     width:100%;
-    top:800px;
-    height:400px;
+    top:200px;
+    height:300px;
     display:flex;
     align-items: center;
     justify-content: center;
   }
   .logo-section span{
     color:rgb(255, 255, 255,1);
+    font-size:5rem;
   }
   
   .logo-image{
-    height:80%;
+    height:max(50%,200px);
     width:auto;
   }
 
   .credit-section{
     bottom:8px;
-    font-size:60px;
+    font-size:30px;
     color:white;
     position:absolute;
     width:100%;
@@ -64,39 +63,39 @@ body {
 
 
 .form-section{
-    flex:1;
-    padding:100px;
-    margin-top:50px;
-    font-size:5rem;
+    flex:0 0 55%;
+    padding:30px;
+    
+    font-size:20px;
     font-weight:0.9;
 
 }
 
 .form-section p {
-    font-size:5rem;
+    font-size:1.5rem;
     }
 
 .header{
-    margin-top:300px;}
+    margin-top:10px;}
 
 .form-div{
-    padding:40px;
-    font-size:50px;
+    padding:10px;
+    font-size:20px;
     font-weight: 0.2;
     background-color:white;
-    box-shadow: 5px 10px #888888;
+    box-shadow: 2px 2px #888888;
 }
 
 input{
-    height:6rem;
-    width:60rem;
-    font-size:5rem;
-    padding:20px;
+    height:14px;
+    width:200px;
+    font-size:1rem;
+    padding:10px;
     border-radius:30px;
     border:1px solid #888888 }
 
 input:focus{
-    border:15px solid blue;
+    border:3px solid blue;
     box-shadow:2px 2px gainsboro;
 }
 
@@ -110,19 +109,19 @@ input:invalid {
     flex-wrap: wrap;
     justify-content:center;
     align-items:center;
-    gap:50px;
-    margin-bottom:60px;
+    gap:10px;
+    margin-bottom:20px;
 }
 label{
     display:block;
-    font-size:4rem;
+    font-size:1rem;
 }
 
 input[type='submit']{
-    height:10rem;
-    width:80rem;
+    height:3rem;
+    width:10rem;
     text-align:center;
-    margin-top:10rem;
+    margin-top:3rem;
     margin-left:4rem;
     cursor:pointer;
     
@@ -140,12 +139,12 @@ input[type='submit']:hover{
 }
 
 .form {
-    margin-top:20rem;
-    margin-bottom:20rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
 }
 
 #warning {
     color:red;
     margin:1px;
-    font-size:3rem;
+    font-size:20px;
 }

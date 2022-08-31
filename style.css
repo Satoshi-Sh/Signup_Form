@@ -1,6 +1,7 @@
-* {
+body {
     margin:0;
     background-color: rgb(218, 208, 208);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @font-face {
@@ -8,6 +9,143 @@
     src: URL('fonts/Norse-Bold.otf') format('truetype');
   }
 
-  h1{
-    font-family:logo-font;
+.container{
+    display:flex;
+    flex-direction:row;
+}
+
+  .image-section {
+    flex:0 0.5 35vw;
+    background-image: url('images/binit-sharma-BiZb01CW0RE-unsplash.jpg');
+    height:120vh;  
+    width:clamp(350px,35vw,1000px);
+    background-repeat:no-repeat;
+    background-size:cover;   
+    position:relative;
   }
+
+  .logo-section{
+    font-size:14rem;
+    font-family:'logo-font',Arial, Helvetica, sans-serif;
+    position:absolute;
+    background-color:rgba(31, 28, 28, 0.6);
+    width:100%;
+    top:800px;
+    height:400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo-section span{
+    color:rgb(255, 255, 255,1);
+  }
+  
+  .logo-image{
+    height:80%;
+    width:auto;
+  }
+
+  .credit-section{
+    bottom:8px;
+    font-size:60px;
+    color:white;
+    position:absolute;
+    width:100%;
+    text-align:center;
+  }
+
+  .credit-section a {
+    color:white;
+  }
+
+  .credit-section a:visited{
+    color:white;
+  }
+
+
+.form-section{
+    flex:1;
+    padding:100px;
+    margin-top:50px;
+    font-size:5rem;
+    font-weight:0.9;
+
+}
+
+.form-section p {
+    font-size:5rem;
+    }
+
+.header{
+    margin-top:300px;}
+
+.form-div{
+    padding:40px;
+    font-size:50px;
+    font-weight: 0.2;
+    background-color:white;
+    box-shadow: 5px 10px #888888;
+}
+
+input{
+    height:6rem;
+    width:60rem;
+    font-size:5rem;
+    padding:20px;
+    border-radius:30px;
+    border:1px solid #888888 }
+
+input:focus{
+    border:15px solid blue;
+    box-shadow:2px 2px gainsboro;
+}
+
+input:invalid {
+    outline: 2px solid red;
+}
+
+.row {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    margin-bottom:60px;
+}
+label{
+    display:block;
+    font-size:4rem;
+}
+
+input[type='submit']{
+    height:10rem;
+    width:80rem;
+    text-align:center;
+    margin-top:10rem;
+    margin-left:4rem;
+    cursor:pointer;
+    
+    background-color: #596D48;
+    color:white;
+}
+
+input[type='submit']:hover{
+    transform:scale(1.05);
+    box-shadow:2px 2px gainsboro; 
+}
+
+.login {
+    color:#596D48;
+}
+
+.form {
+    margin-top:20rem;
+    margin-bottom:20rem;
+}
+
+#warning {
+    color:red;
+    margin:1px;
+    font-size:3rem;
+}
